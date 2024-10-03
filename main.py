@@ -20,6 +20,6 @@ templates = Jinja2Templates(directory=".")
 
 async def read_root(request: Request):
     mensaje = "hola profe"
-    lista = [1, 2, 3, 4, 5, 6,7, 8]
+    lista = [1, 2, 3, 4, 5, 6, 7, 8]
 
     return templates.TemplateResponse("index.html", {"request": request, "message": mensaje, "X": lista})
